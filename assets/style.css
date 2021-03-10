@@ -546,7 +546,7 @@ body {
 
 .card__buttom {
     color: #fff;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -628,7 +628,7 @@ body {
 }
 
 .video_text-header {
-    font-family: 'Roleway' sans-serif;
+    font-family: 'Roleway', sans-serif;
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
@@ -636,7 +636,7 @@ body {
 }
 
 .video_text-text {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 16;
     line-height: 1.2;
@@ -663,7 +663,7 @@ body {
 
 
 .mobile__wrapper-header {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 30px;
     line-height: 1.2;
@@ -731,4 +731,212 @@ body {
     line-height: 1.2;
     color: #8C8C8C;
 
+}
+
+/* Counters */
+
+.counters {
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+}
+
+.counters__blocks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.counters__wrapper {
+    text-align: center;
+    margin: 36px 0;
+}
+
+.counters__wrapper::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 30px;
+    margin: 15px auto 0;
+}
+
+
+.counters__header {
+    color: #fff;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.counters__text {
+    color: #C7B299;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+
+
+}
+
+
+/* Recent */
+
+.recent {
+    background: #fff;
+    padding: 100px 0 40px;
+
+}
+
+.recent__header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recent__header-head {
+    font-family: 'Roleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.recent__header-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #8c8c8c;
+    max-width: 770px;
+    margin: 0 auto;
+}
+
+.recent__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+
+}
+
+.recent__card {
+    position: relative;
+    max-width:  370px;
+    border: 1px solid #b2b2b2;
+}
+
+.recent__wrapper-wrapper {
+    position: relative;
+}
+
+.recent__card:hover .recent__wrapper-shadow {
+    display: flex;
+}
+
+.recent__container {
+    margin: 30px 36px 25px 23px   ;
+}
+
+.recent__card:hover  {
+    background: #352F2D;
+}
+
+
+.recent__wrapper-img {
+    display: block;
+    
+}
+
+.recent__wrapper-shadow{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.recent__wrapper-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #555;
+    margin-bottom: 20px;
+
+}
+
+.recent__card:hover .recent__wrapper-header{
+    
+    color: #C7B299;
+}
+
+.recent__wrapper-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.recent__card:hover .recent__wrapper-text {
+    color: #fff;
+}
+
+.recent__wrapper-link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #c7b299;
+    text-decoration: none;
+}
+
+
+/* calendar */
+
+.calendar {
+    position: absolute;
+    top: 16px;
+    left: 23px;
+}
+
+.calendar__date {
+    width: 50px;
+    height: 35px;
+    background: #363636;
+    border-radius: 3px 3px 0 0 ;
+    font-weight: 300;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar__month {
+    width: 50px;
+    height: 25px;
+    background: #242424;
+    border-radius: 0 0 3px 3px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.recent__card:hover .calendar__date {
+    background: #C7B199;
+}
+
+.recent__card:hover .calendar__month {
+    background: #A48D71;
+}
+/*-----------*/
+
+.recent__cards-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.recent-left__button {
+    margin-right: 20px;
 }
