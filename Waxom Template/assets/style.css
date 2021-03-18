@@ -12,6 +12,16 @@ body {
     
 }
 
+/* Burger */
+
+.burger {
+    list-style-type: none;
+}
+
+.burger__button {
+    opacity: 0;
+}
+
 /* header */
 
 .header {
@@ -229,6 +239,9 @@ body {
     margin-right: 30px;
 }
 
+.services__card:nth-child(4) {
+    margin-right: 0;
+}
 
 
 .services__card-link {
@@ -263,7 +276,7 @@ body {
 
 
 .services__card-heading {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 22px;
     line-height: 1.2;
