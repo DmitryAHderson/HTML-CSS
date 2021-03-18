@@ -12,6 +12,16 @@ body {
     
 }
 
+/* Burger */
+
+.burger {
+    list-style-type: none;
+}
+
+.burger__button {
+    opacity: 0;
+}
+
 /* header */
 
 .header {
@@ -26,9 +36,8 @@ body {
     background-image: url(../assets/images/header__img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     /* height: 100vh;*/
-    /*padding: 40px 160px 50px;*/
+    padding: 40px 160px 50px;
 }
 
 
@@ -110,6 +119,7 @@ body {
 .slider__buttom {
     display: flex;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .buttom:hover {
@@ -141,7 +151,7 @@ body {
 .slider__text {
     font-size: 16px;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .slider__link {
@@ -217,16 +227,22 @@ body {
 
 .services__cards{ 
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    
 }
 
 
 .services__card {
     max-width: 270px;
     text-align: center;
-    
+    float: right;
+    margin-right: 30px;
 }
+
+.services__card:nth-child(4) {
+    margin-right: 0;
+}
+
 
 .services__card-link {
     
@@ -260,7 +276,7 @@ body {
 
 
 .services__card-heading {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 22px;
     line-height: 1.2;
@@ -412,8 +428,17 @@ body {
     box-sizing: border-box;
     border: 1px solid #EBEBEB;
     border-radius: 3px;
-    padding: 8px 25px;
+    width: 120px;
+    height: 32px;
+    /*padding: 8px 25px;*/
     cursor: pointer;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.card-all {
+    width: 70px;
+    height: 32px;
 }
 
 .card__button:hover{
@@ -931,12 +956,183 @@ body {
 }
 /*-----------*/
 
-.recent__cards-button {
+.recent__button-card {
     display: flex;
     justify-content: center;
 
 }
 
-.recent-left__button {
+.recent__button-left {
     margin-right: 20px;
+    fill: #D1D1D1;
 }
+
+.recent__button-left:hover {
+    fill: #A48D71;
+}
+
+
+.recent__button-right {
+    fill: #C7B299;
+}
+
+.recent__button-right:hover {
+    fill: #A48D71;
+}
+
+
+/* Partners */
+
+.partners {
+    background-image: url(../assets/images/partners__img/bacground_partners.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0;
+    
+}
+
+.partners__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1065px;
+    margin: 0 auto;
+}
+
+.partners-logo {
+    display: block;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #191919;
+    padding: 74px 0 128px ;
+    color: #fff;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer__section {
+    max-width: 270px;
+}
+
+.footer__section-wrapper {
+    padding: 33px 0 0;
+}
+
+.footer__section-waxom-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.footer__section-head {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.footer__section-waxom-head {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.footer__text {
+    margin-bottom: 18px;
+}
+
+.footer__section-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #555555;
+}
+
+.footer__section-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__section-date {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.2;
+    color:#363636;
+}
+
+.footer__section-link:hover {
+    color: #C7B299;
+}
+
+.footer__section-link:hover .footer__section-text{
+    color: #C7B299;
+}
+
+.footer__section-link:hover .footer__section-date {
+    color: #fff;
+}
+
+.footer__article:first-of-type {
+    margin-top: 24px;
+}
+
+.footer__article::after {
+    content: '';
+    background: #242424;
+    display: block;
+    width: 270px;
+    height: 1px;
+    margin: 12px 0 12px;
+}
+
+.footer__section-img {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+}
+
+
+/* Twitter color */
+
+.twitter {
+    color: #00BFF3;
+}
+/*---------------*/
+
+/* Visited*/
+
+.visited {
+    color: #757575;
+}
+
+/* Copyright */
+
+.copyright {
+    background: #101010;
+    padding: 60px 0 40px;
+}
+
+.footer__wrapper-copy {
+    display: flex;
+}
+
+.footer__partition {
+    display: flex;
+}
+
+ .footer__partition::before {
+    content: '';
+    background: #1A1A1A;
+    display: block;
+    width: 1px;
+    height: 16px;
+    margin: 0 12px 0 12px;
+ }
